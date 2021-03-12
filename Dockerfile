@@ -15,7 +15,7 @@ RUN apt-get update && \
 RUN usermod -u $UID www-data && groupmod -g $GID www-data
 
 VOLUME /media
-EXPOSE 80
+EXPOSE 8080
 
 COPY webdav.conf /etc/nginx/conf.d/default.conf
 RUN rm /etc/nginx/sites-enabled/*
