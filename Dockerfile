@@ -2,8 +2,8 @@ FROM debian:stable-slim
 
 LABEL maintainer "ugeek. ugeekpodcast@gmail.com" 
 
-ARG UID=${UID:-1000}
-ARG GID=${GID:-1000}
+ARG UID=${UID:-82}
+ARG GID=${GID:-82}
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
